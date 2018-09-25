@@ -24,23 +24,19 @@ class Worker(
   table: File
 ) {
 
-  /**
-    *
+  /** Logger instance
     */
   private val logger: Logger = Logger.getLogger(this.getClass)
 
-  /**
-    *
+  /** The table print writer to write the csv to
     */
   private val tablePrintWriter: PrintWriter = new PrintWriter(table)
 
-  /**
-    *
+  /** The LabProtocol representation for the experiment
     */
   private val protocol: LabProtocol = BehaviorSpaceUtil.getExperimentFromModel(model, experiment)
 
-  /**
-    *
+  /** The Exporter that writes the csv files
     */
   private val tableWriter = new TableExporter(
     model.getAbsolutePath,
@@ -49,14 +45,11 @@ class Worker(
     tablePrintWriter
   )
 
-  /**
-    *
+  /** Boolean that decides if the loop needs to run
     */
   private var active: Boolean = true
 
-  /**
-    *
-    */
+
   def run: Unit = {
     tableWriter.experimentStarted()
 

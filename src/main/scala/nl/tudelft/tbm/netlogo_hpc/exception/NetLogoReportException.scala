@@ -1,9 +1,9 @@
 package nl.tudelft.tbm.netlogo_hpc.exception
 
-/** Thrown if the specified experiment is missing
+/** Thrown if NetLogo fails to report properly
   *
   * @param message The message to report on exception
   */
-class MissingExperimentException(
+class NetLogoReportException(
   message: String
 ) extends Exception(message) {}

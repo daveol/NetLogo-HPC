@@ -12,22 +12,29 @@ import scala.concurrent.duration.Duration
 import scala.sys.process.Process
 import scala.util.matching.Regex.Match
 
-/** Slurm scheduler class
+/** Slurm interaction based on scheduler
+  *
+  * @param settings The settings for the scheduler
   */
 class Slurm (
   settings: SchedulerSettings
 ) extends Scheduler(settings) {
 
+  /** Logger instance
+    */
   private val logger = Logger.getLogger(this.getClass)
 
+  /** The logging directory for slurm it self
+    */
   private val logDir = new File(settings.model.getParent, "logs")
-
   if(!logDir.isDirectory) logDir.mkdirs()
 
   /** The name of the scheduler
     */
   val name: String = "Slurm"
 
+  /** A list of jobs that are submitted
+    */
   private val jobsList: ListBuffer[Job] = ListBuffer.empty[Job]
 
   /** Return a list of submitted jobs to slurm

@@ -28,64 +28,54 @@ class BehaviorWorkspace(
   private val connection: NetworkConnection
 ) {
 
-  /**
-    *
+  /** Logging instance
     */
   private val logger: Logger = Logger.getLogger(this.getClass)
 
-  /**
-    * The actual NetLogo Workspace
+  /** The actual NetLogo Workspace
     *
     * This workspace is for handling most of the NetLogo model
     */
   private val workspace: HeadlessWorkspace = HeadlessWorkspace.newInstance
   workspace.open(model.getPath)
 
-  /**
-    * The owner to use for runCompiledReporter and runCompiledCommand in the workspace
+  /** The owner to use for runCompiledReporter and runCompiledCommand in the workspace
     */
   private val owner: SimpleJobOwner = new SimpleJobOwner("BehaviorWorkSpace", workspace.world.mainRNG)
 
-  /**
-    * The settings to get, from the run number
+  /** The settings to get, from the run number
     */
   private val settings: List[(String, Object)] = BehaviorSpaceUtil.getSettingsFromExperiment(protocol, runNumber)
 
-  /**
-    * The listeners that we need to report to
+  /** The listeners that we need to report to
     */
   private val listeners: MutableList[ProgressListener] = new MutableList[ProgressListener]
 
-  /**
-    * The compiled 'setup' procedure
+  /** The compiled 'setup' procedure
     *
     * Compiled from the setupCommands variable defined in the BehaviorSpace experiment (LabProtocol)
     */
   private val setupProcedure: Procedure = workspace.compileCommands(protocol.setupCommands)
 
-  /**
-    * The compiled 'go' procedure
+  /** The compiled 'go' procedure
     *
     * Compiled from the goCommands variable defined in the BehaviorSpace experiment (LabProtocol)
     */
   private val goProcedure: Procedure = workspace.compileCommands(protocol.goCommands)
 
-  /**
-    * The compiled 'final' procedure
+  /** The compiled 'final' procedure
     *
     * Compiled from the finalCommands variable defined in the BehaviorSpace experiment (LabProtocol)
     */
   private val finalProcedure: Procedure = workspace.compileCommands(protocol.finalCommands)
 
-  /**
-    * A List of compiled procedures to get metrics
+  /** A List of compiled procedures to get metrics
     *
     * Compiled from the list of metrics defined in the BehaviorSpace experiment (LabProtocol)
     */
   private val metricProcedures: List[Procedure] = protocol.metrics.map(workspace.compileReporter)
 
-  /**
-    * The compiled procedure for checking the exit condition
+  /** The compiled procedure for checking the exit condition
     */
   private val exitConditionProcedure: Option[Procedure] = BehaviorSpaceUtil.getCompiledExitCondition(workspace, protocol)
 
@@ -157,8 +147,7 @@ class BehaviorWorkspace(
     }
   }
 
-  /**
-    * add a ProgressListener for the workspace from monitoring metrics & more
+  /** Add a ProgressListener for the workspace from monitoring metrics & more
     *
     * @param listener the progresslistener to add
     */
@@ -168,16 +157,9 @@ class BehaviorWorkspace(
     }
   }
 
-  /**
-    * Mostly based on setVariables from {org.nlogo.lab.Worker}
-    */
-  def getDimensions: WorldDimensions = {
-    workspace.world.getDimensions
-  }
-
-  /**
+  /** Report the measurements to the progressListeners and send the metrics
     *
-    * @param step the step to report the metrics for
+    * @param step The step to report the measurements for
     */
   private def reportMeasurements(step: Int): Unit = {
     val measurements: List[AnyRef] = metricProcedures.map(workspace.runCompiledReporter(owner, _))
@@ -197,10 +179,19 @@ class BehaviorWorkspace(
     ))
   }
 
+  /** Check if the time limit is reached
+    *
+    * @param step The step to check the limit on
+    * @return True if the condition is reached, False if not
+    */
   private def timeLimitReached(step: Int): Boolean = {
     !(protocol.timeLimit == 0 || step < protocol.timeLimit)
   }
 
+  /** Check if the exit condition is met in the simulation
+    *
+    * @return True if the condition is reached, False if not
+    */
   private def exitConditionReached: Boolean = {
     // Don't bother checking if the exitCondition is empty
     if (exitConditionProcedure.isEmpty) return false

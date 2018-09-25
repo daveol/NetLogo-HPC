@@ -5,8 +5,7 @@ import java.io.File
 import nl.tudelft.tbm.netlogo_hpc.exception.{MissingBinaryException, TimeoutException}
 
 
-/**
-  * Utility class for common utility functions across the code base
+/** Utility class for common utility functions across the code base
   */
 object Util {
 

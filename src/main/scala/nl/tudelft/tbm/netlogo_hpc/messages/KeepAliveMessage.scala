@@ -2,14 +2,28 @@ package nl.tudelft.tbm.netlogo_hpc.messages
 
 import org.sim0mq.message.SimulationMessage
 
+/** KeepAliveMessage
+  *
+  * @param simulationRunId The application id to verify the message
+  * @param senderId The client id of the client that send it
+  * @param receiverId The client id of the receiver
+  * @param messageId The id for the message
+  */
 class KeepAliveMessage(
   override val simulationRunId: String,
   override val senderId: String,
   override val receiverId: String,
   override val messageId: Long
 ) extends Message {
+
+  /** The message type for KeepAliveMessage
+    */
   override val messageType: Message.Type.Value = Message.Type.KeepAliveMessage
 
+  /** Encode the message
+    *
+    * @return An array of bytes
+    */
   override def encode(): Array[Byte] = {
     SimulationMessage.encodeUTF8(
       this.simulationRunId,
@@ -23,6 +37,12 @@ class KeepAliveMessage(
 }
 
 object KeepAliveMessage {
+
+  /** Decode to a KeepAliveMessage object
+    *
+    * @param data The array of objects to decode from
+    * @return A KeepAliveMessage object
+    */
   def decode(data: Array[Object]): KeepAliveMessage = {
     val messageType = Message.Type(data(Message.Part.messageTypeId).asInstanceOf[Int])
 

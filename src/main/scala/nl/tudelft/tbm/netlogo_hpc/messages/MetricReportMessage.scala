@@ -2,6 +2,16 @@ package nl.tudelft.tbm.netlogo_hpc.messages
 
 import org.sim0mq.message.SimulationMessage
 
+/** MetricReportMessage
+  *
+  * @param simulationRunId The application id to verify the message
+  * @param senderId The client id of the client that send it
+  * @param receiverId The client id of the receiver
+  * @param messageId The id for the message
+  * @param runNumber The run number to report the metrics for
+  * @param step The step to report the metrics for
+  * @param data The metrics to report
+  */
 class MetricReportMessage(
   override val simulationRunId: String,
   override val senderId: String,
@@ -12,8 +22,14 @@ class MetricReportMessage(
   val data: List[AnyRef]
 ) extends Message {
 
+  /** The message type for MetricReportMessage
+    */
   override val messageType: Message.Type.Value = Message.Type.MetricReportMessage
 
+  /** Encode the MetricReportMessage
+    *
+    * @return An array of bytes
+    */
   override def encode(): Array[Byte] = {
 
     val mdata: List[Any] = this.runNumber :: this.step :: this.data
@@ -30,7 +46,13 @@ class MetricReportMessage(
   }
 }
 
+//noinspection ZeroIndexToHead
 object MetricReportMessage {
+  /** Decode the MetricReportMessage
+    *
+    * @param data The data to decode
+    * @return A object of MetricReportMessage
+    */
   def decode(data: Array[Object]): MetricReportMessage = {
     val messageType = Message.Type(data(Message.Part.messageTypeId).asInstanceOf[Int])
 

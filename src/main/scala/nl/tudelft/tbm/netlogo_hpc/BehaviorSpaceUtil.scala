@@ -10,10 +10,16 @@ import org.nlogo.nvm.Procedure
 
 import scala.collection.mutable.{HashMap, Queue}
 
-/**
-  * A collection of methods for working with BehaviorSpace
+/** A collection of methods for working with BehaviorSpace
   */
 object BehaviorSpaceUtil {
+
+  /** Get the world dimensions from a NetLogo model file
+    *
+    * @param model The model file to world
+    * @param protocol
+    * @return
+    */
   def getDimensions(model: File, protocol: LabProtocol): WorldDimensions = {
     val workspace = HeadlessWorkspace.newInstance
     workspace.open(model.getAbsolutePath)

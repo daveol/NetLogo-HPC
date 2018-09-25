@@ -2,6 +2,14 @@ package nl.tudelft.tbm.netlogo_hpc.messages
 
 import org.sim0mq.message.SimulationMessage
 
+/** RunNumberReplyMessage
+  *
+  * @param simulationRunId The application id to verify the message
+  * @param senderId The client id of the client that send it
+  * @param receiverId The client id of the receiver
+  * @param messageId The id for the message
+  * @param runNumber The run number to reply
+  */
 class RunNumberReplyMessage(
   override val simulationRunId: String,
   override val senderId: String,
@@ -9,8 +17,14 @@ class RunNumberReplyMessage(
   override val messageId: Long,
   val runNumber: Int
 ) extends Message {
+  /** Message type for RunNumberReplyMessage
+    */
   override val messageType: Message.Type.Value = Message.Type.RunNumberReplyMessage
 
+  /** RunNumberReplyMessage encode to bytes
+    *
+    * @return An array of bytes
+    */
   override def encode(): Array[Byte] = {
     SimulationMessage.encodeUTF8(
       this.simulationRunId,
@@ -25,6 +39,11 @@ class RunNumberReplyMessage(
 }
 
 object RunNumberReplyMessage {
+  /** Decoding to a RunNumberReplyMessage
+    *
+    * @param data An array of objects to decode
+    * @return A RunNumberReplyMessage
+    */
   def decode(data: Array[Object]): RunNumberReplyMessage = {
     val messageType = Message.Type(data(Message.Part.messageTypeId).asInstanceOf[Int])
 

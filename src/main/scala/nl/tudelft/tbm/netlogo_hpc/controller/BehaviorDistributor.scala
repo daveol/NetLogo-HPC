@@ -17,7 +17,7 @@ class BehaviorDistributor(
   protocol: LabProtocol
 ) extends Runnable {
 
-  /** Logger to message to
+  /** Logger instance
     */
   private val logger: Logger = Logger.getLogger(this.getClass)
 

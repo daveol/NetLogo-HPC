@@ -7,6 +7,16 @@ import nl.tudelft.tbm.netlogo_hpc.scheduler.{Scheduler, SchedulerSettings}
 
 import scala.concurrent.duration.Duration
 
+/** Settings for the scheduler
+  *
+  * @param model The model file to use
+  * @param experiment The experiment to run
+  * @param duration The duration of a job
+  * @param connection The networkConnection to use
+  * @param behaviorSpace The BehaviorSpace
+  * @param scheduler A Constructor to create a scheduler object
+  * @param concurrentTasks Limit of concurrent tasks to run on a cluster
+  */
 class SchedulerController(
   model: File,
   experiment: String,

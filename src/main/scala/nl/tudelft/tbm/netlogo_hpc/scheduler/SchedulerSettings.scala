@@ -29,7 +29,10 @@ class SchedulerSettings(
   connection: NetworkConnection
 ){
 
-
+  /** Get the memory constraint for a job
+    *
+    * @return A string containing a constraint
+    */
   def getMemory: String = {
     "2G"
   }

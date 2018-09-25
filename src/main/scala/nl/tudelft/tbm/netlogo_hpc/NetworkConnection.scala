@@ -18,7 +18,8 @@ import scala.collection.mutable
   * @param uri           The uri to listen/connect on in the form of: [protocol]://[address]:[port]
   * @param listen        Whether to listen (true) or to connect (false)
   */
-class NetworkConnection(
+class
+NetworkConnection(
   val clientId: String,
   val applicationId: String,
   uri: String,

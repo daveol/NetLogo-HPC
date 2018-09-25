@@ -5,8 +5,9 @@ import nl.tudelft.tbm.netlogo_hpc.exception.DiscoveryException
 import scala.concurrent.duration.Duration
 
 
-/**
+/** An abstract scheduler to base other schedulers on (polymorphism)
   *
+  * @param settings The settings for the scheduler
   */
 abstract class Scheduler(
   settings: SchedulerSettings
@@ -22,7 +23,7 @@ abstract class Scheduler(
 
   /** Count the active jobs
     *
-    * @return the amount of active jobs
+    * @return The amount of active jobs
     */
   def activeJobs: Int
 
@@ -49,21 +50,19 @@ object Scheduler {
       */
     def state: Job.State.Value
 
-    /**
+    /** Get the time left for the job
       *
-      * @return
+      * @return The time left
       */
     def timeLeft: Duration
 
-    /**
-      *
+    /** Cancel the job
       */
     def cancel()
   }
 
   object Job {
-    /**
-      *
+    /** Enumeration for states
       */
     object State extends Enumeration {
 

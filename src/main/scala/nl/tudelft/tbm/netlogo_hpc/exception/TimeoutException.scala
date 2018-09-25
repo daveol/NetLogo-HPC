@@ -1,9 +1,9 @@
 package nl.tudelft.tbm.netlogo_hpc.exception
 
-/** Thrown if the specified experiment is missing
+/** Thrown if a Timeout is reached
   *
   * @param message The message to report on exception
   */
-class MissingExperimentException(
+class TimeoutException(
   message: String
 ) extends Exception(message) {}

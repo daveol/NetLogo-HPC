@@ -2,12 +2,12 @@ package nl.tudelft.tbm.netlogo_hpc.messages
 
 import org.sim0mq.message.SimulationMessage
 
-/**
+/** RunNumberRequestMessage
   *
-  * @param simulationRunId
-  * @param senderId
-  * @param receiverId
-  * @param messageId
+  * @param simulationRunId The application id to verify the message
+  * @param senderId The client id of the client that send it
+  * @param receiverId The client id of the receiver
+  * @param messageId The id for the message
   */
 class RunNumberRequestMessage(
   override val simulationRunId: String,
@@ -16,8 +16,7 @@ class RunNumberRequestMessage(
   override val messageId: Long,
 ) extends Message {
 
-  /**
-    *
+  /** The message type of RunNumberRequestMessage
     */
   override val messageType: Message.Type.Value = Message.Type.RunNumberRequestMessage
 
