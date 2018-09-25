@@ -2,8 +2,6 @@ package nl.tudelft.tbm.netlogo_hpc.scheduler
 
 import java.io.{File, PrintWriter}
 
-import scala.sys.process.Process
-import scala.util.matching.Regex
 import nl.tudelft.tbm.netlogo_hpc.Util
 import nl.tudelft.tbm.netlogo_hpc.exception.MissingBinaryException
 import nl.tudelft.tbm.netlogo_hpc.scheduler.Scheduler.Job
@@ -11,6 +9,7 @@ import org.apache.log4j.Logger
 
 import scala.collection.mutable.ListBuffer
 import scala.concurrent.duration.Duration
+import scala.sys.process.Process
 import scala.util.matching.Regex.Match
 
 /** Slurm scheduler class
@@ -32,6 +31,8 @@ class Slurm (
   private val jobsList: ListBuffer[Job] = ListBuffer.empty[Job]
 
   /** Return a list of submitted jobs to slurm
+    *
+    * @return the list of jobs
     */
   def jobs: List[Job] = {
     jobsList.synchronized {
@@ -39,6 +40,10 @@ class Slurm (
     }
   }
 
+  /** Count the amount of active jobs
+    *
+    * @return the amount of active jobs
+    */
   def activeJobs: Int = {
     jobsList.synchronized {
       jobsList.count((job: Job) => {
@@ -126,7 +131,7 @@ class Slurm (
         case stat if stat.contains("R")  => Job.State.Running
         case _ => {
           logger.debug(s"Job status unknown: status=$proc")
-          Job.State.Running
+          Job.State.Canceled
         }
       }
     }

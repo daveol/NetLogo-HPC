@@ -12,7 +12,6 @@ resolvers += "Artima Maven Repository" at "http://repo.artima.com/releases"
 
 libraryDependencies += "org.nlogo" % "netlogo" % "6.0.3"
 libraryDependencies += "org.sim0mq" % "sim0mq" % "0.05.00"
-libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "1.1.0"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % "test"
 

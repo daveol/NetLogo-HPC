@@ -1,7 +1,9 @@
 package nl.tudelft.tbm.netlogo_hpc.scheduler
 
 import java.io.File
+
 import nl.tudelft.tbm.netlogo_hpc.NetworkConnection
+
 import scala.concurrent.duration.Duration
 
 

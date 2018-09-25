@@ -7,16 +7,15 @@ import nl.tudelft.tbm.netlogo_hpc.messages._
 import nl.tudelft.tbm.netlogo_hpc.{BehaviorSpaceUtil, NetworkConnection, Util}
 import org.apache.log4j.Logger
 import org.nlogo.api.LabProtocol
-import org.nlogo.headless.HeadlessWorkspace
 import org.nlogo.lab.TableExporter
 
 
-/**
+/** The worker process that manages requests for runNumbers and the workspace
   *
-  * @param connection
-  * @param model
-  * @param experiment
-  * @param table
+  * @param connection The networking connection
+  * @param model The model file for the experiment
+  * @param experiment The experiment to run from the model
+  * @param table The table to write metrics to
   */
 class Worker(
   connection: NetworkConnection,

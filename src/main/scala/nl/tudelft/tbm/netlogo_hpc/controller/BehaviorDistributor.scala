@@ -7,12 +7,26 @@ import org.nlogo.api.LabProtocol
 
 import scala.collection.mutable
 
+/** Distribution of runNumbers
+  *
+  * @param network The network thread to communicate through
+  * @param protocol The experiment as a LabProtocol representation
+  */
 class BehaviorDistributor(
   network: NetworkConnection,
   protocol: LabProtocol
 ) extends Runnable {
+
+  /** Logger to message to
+    */
   private val logger: Logger = Logger.getLogger(this.getClass)
+
+  /** The queue with runNumbers
+    */
   private val runNumberQueue: mutable.Queue[Int] = BehaviorSpaceUtil.getRunNumberQueue(protocol)
+
+  /** A HashMap containing the running workers and the runNumber they are running
+    */
   private val running: mutable.HashMap[String, Int] = mutable.HashMap.empty[String, Int]
 
   def run(): Unit = {

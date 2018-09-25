@@ -9,7 +9,6 @@ import org.zeromq.ZMQ
 import zmq.ZMQ.ZMQ_LAST_ENDPOINT
 
 import scala.collection.mutable
-import scala.sys.process.Process
 
 
 /** To send and receive Messages

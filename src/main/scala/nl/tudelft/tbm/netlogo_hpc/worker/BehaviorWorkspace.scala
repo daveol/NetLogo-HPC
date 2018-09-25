@@ -1,6 +1,6 @@
 package nl.tudelft.tbm.netlogo_hpc.worker
 
-import java.io.{File, PrintWriter}
+import java.io.File
 
 import nl.tudelft.tbm.netlogo_hpc.exception.NetLogoReportException
 import nl.tudelft.tbm.netlogo_hpc.messages.MetricReportMessage
