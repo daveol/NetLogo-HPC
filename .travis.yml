@@ -1,3 +1,16 @@
 language: scala
-scala:
- - 2.12.4
+scala: 2.12.4
+script:
+ - sbt ++$TRAVIS_SCALA_VERSION test
+ - sbt ++$TRAVIS_SCALA_VERSION packArchive
+deploy:
+ provider: releases
+ api_key:
+  secure: Vs79bGf9ZuBaAOvaOd/XCFq/Y2qA4vUbbPXs166cNIuoVfig+EYcN/YgGaEkBDFUAv/vKk1P5tU2QimkZNZbKIW1pPCwaRG3WLiJAoKfT1dsGlmNw5j5XjfiTpJr9R4paf/dmQAOr99ypZK1fHqoMJ4rXXOWdBKRAnM6t9JwOHKRt8MBPJQMKCzaCHRL0sKp2/GFsy9YcpvRuLOHAVbyxEyI4v9g3cDiMViga9COyABbjjeaxFsrrlyotvGmWMnaJMyA1WC52dcGvVOlMZAd9zsBEYz1hU/SPHFbXscw1PSKrsdG9aNHBQr76W4dJuSraeZqcm0oHM3iLa5aV73+iXJwfSJ//xi3bBpGu1BiNuSDjw/x/fBg7NM5hmsCHBWOr1wxpDCMiD16BTY3VfMd8iIVQ7oClH88S9tj1J/+2QITSc9TkGG40JkPS5MQ3+FFb87RMr96EBeFzCCtX7wCnSQfqQ3z7/oaQ3yosfoOiVk0Vwji2C8Urq3FFyvhbTBvwH35gKhS1vp+QvMUtkjgqCcUyjBa8Fcfwa64kHL7RurCHNEjPyqtNcv74p+b31x1dw2rMcdh4xB8QrfMeJXEoRCxcob+GJMFPXPWAYV6aqe6/2HoPmADjnvVHwQzX8sfPdI0Fp6d2qcR+bsElt6jug9JIbE4KWbxNHRdM9uY4G4=
+ file_glob: true
+ file:
+  - target/NetLogo-HPC*tar.gz
+  - target/NetLogo-HPC*zip
+ on:
+  repo: daveol/NetLogo-HPC
+  tags: true
