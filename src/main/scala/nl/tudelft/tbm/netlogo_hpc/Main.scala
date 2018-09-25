@@ -16,10 +16,6 @@ object Main {
 
   private val logger: Logger = Logger.getLogger(this.getClass)
 
-  /**
-    *
-    * @param args
-    */
   def main(args: Array[String]): Unit = {
 
     // Set up a simple configuration that logs on the console.
@@ -70,6 +66,41 @@ object Main {
         }
         case "--client-id" => clientId = Util.nextOrExit(iterator, "--client-id")
         case "--application-id" => applicationId = Util.nextOrExit(iterator, "--application-id")
+        case "--help" => {
+          print(
+            """
+              | netlogo-hpc
+              |
+              | Arguments:
+              |  --help
+              |      shows this help information
+              |
+              |  --model [file]
+              |      Specify the NetLogo model file
+              |
+              |  --experiment [name]
+              |      Specify the experiment to run
+              |
+              |  --worker or --connect
+              |      Specify the role of the instance
+              |        Controller: distributes and submits tasks
+              |        Worker:     processes the simulations
+              |
+              |  --connect [uri] or --listen [uri]
+              |      Connect or Bind to a URI in the style of 'tcp://[ip]:[port]'
+              |
+              |  --table [file]
+              |      Table to write the metrics from simulations to
+              |
+              |  --application-id [string]
+              |      Specifies the application id to check against, it will default to a random uuid
+              |
+              |  --client-id [string]
+              |      Specifies the client id to use for receiving and sending messages, will override to 'controller'
+              |      when the controller role is specified otherwhise it will default to a random uuid
+            """.stripMargin)
+          sys.exit(0)
+        }
       }
     }
 
