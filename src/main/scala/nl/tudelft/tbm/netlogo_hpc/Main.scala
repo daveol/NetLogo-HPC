@@ -132,9 +132,6 @@ object Main {
       throw new RuntimeException("No role specified")
     }
 
-    /* interrupt and then join thread for closing */
-    networkThread.interrupt()
-
     //exit properly
     sys.exit(0)
   }

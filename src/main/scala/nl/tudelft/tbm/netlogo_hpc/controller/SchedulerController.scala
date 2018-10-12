@@ -46,7 +46,8 @@ class SchedulerController(
       if (submitted < concurrentTasks && behaviorSpace.runNumbersAvailable > 0) instance.submitJob
 
       // do not go overboard submitting jobs
-      Thread.sleep(1000)
+      // only check every minute
+      Thread.sleep(60 * 1000)
     }
 
     // jobs are unneeded cancel them
