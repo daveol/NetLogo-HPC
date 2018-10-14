@@ -1,6 +1,7 @@
 package nl.tudelft.tbm.netlogo_hpc
 
 import java.io.File
+import java.net.InetAddress
 import java.util.UUID.randomUUID
 
 import nl.tudelft.tbm.netlogo_hpc.controller.Controller
@@ -34,7 +35,7 @@ object Main {
     var workerRole: Boolean = Properties.envOrElse("NETLOGO_WORKER", "false").toBoolean
     /* network settings */
     var listen: Boolean = Properties.envOrElse("NETLOGO_LISTEN", "false").toBoolean
-    var uri: String = Properties.envOrElse("NETLOGO_URI", "tcp://*:*")
+    var uri: String = Properties.envOrElse("NETLOGO_URI", s"tcp://${InetAddress.getLocalHost.getHostAddress}:*")
     var clientId: String = Properties.envOrElse("NETLOGO_CLIENT_ID", randomUUID().toString)
     var applicationId: String = Properties.envOrElse("NETLOGO_APP_ID", randomUUID().toString)
 
