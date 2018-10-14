@@ -12,3 +12,6 @@ Which will create the file ```target/NetLogo-HPC-*.tar.gz``` which contains the 
  be unpacked by running```tar xvf /path/to/NetLogo-HPC-*.tar.gz``` which then makes ```bin/netlogo-hpc``` which runs the
  application.
  
+## Using the application
+After unpacking the build file or release on the cluster you can run ```path/to/bin/netlogo-hpc --help``` for an explanation
+of the parameters. 

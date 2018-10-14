@@ -2,7 +2,7 @@ enablePlugins(PackPlugin)
 
 name := "NetLogo-HPC"
 organization := "nl.tudelft.tbm"
-version := "0.1.0"
+version := "0.1.1"
 
 resolvers += Resolver.bintrayRepo("netlogo", "NetLogo-JVM")
 resolvers += "sim0mq Public Repository" at "http://sim0mq.org/maven"
