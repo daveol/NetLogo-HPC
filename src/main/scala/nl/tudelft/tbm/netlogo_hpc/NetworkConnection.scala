@@ -62,7 +62,7 @@ NetworkConnection(
 
     if (listen) {
       /* open socket for listening */
-      socket.bind(uri)
+      socket.bindToRandomPort(uri)
     } else {
       /* open socket for connecting */
       logger.debug(s"Connecting to $uri")

@@ -35,12 +35,9 @@ object Main {
     var workerRole: Boolean = Properties.envOrElse("NETLOGO_WORKER", "false").toBoolean
     /* network settings */
     var listen: Boolean = Properties.envOrElse("NETLOGO_LISTEN", "false").toBoolean
-    var uri: String = Properties.envOrElse("NETLOGO_URI", s"tcp://${InetAddress.getLocalHost.getHostAddress}:*")
+    var uri: String = Properties.envOrElse("NETLOGO_URI", s"tcp://${InetAddress.getLocalHost.getHostAddress}")
     var clientId: String = Properties.envOrElse("NETLOGO_CLIENT_ID", randomUUID().toString)
     var applicationId: String = Properties.envOrElse("NETLOGO_APP_ID", randomUUID().toString)
-
-
-
 
     val iterator = args.iterator
     while (iterator.hasNext) {
@@ -52,6 +49,7 @@ object Main {
         case "--controller" => {
           clientId = "controller"
           controllerRole = true
+          listen = true
         }
         case "--table" => table = Some(Util.nextOrExit(iterator, "--table"))
         /* worker settings */
@@ -116,6 +114,11 @@ object Main {
       System.exit(1)
     }
 
+    if (experiment.isEmpty) {
+      logger.error("Netlogo experiment is not specified")
+      System.exit(1)
+    }
+
     if (table.isEmpty) {
       logger.error("NetLogo table file is not given")
       System.exit(1)
@@ -128,6 +131,7 @@ object Main {
 
     val networkThread = new Thread(connection)
     networkThread.start()
+    Thread.sleep(1000)
 
     if (workerRole) {
       val worker = new Worker(connection, modelFile, experiment.get, tableFile)
