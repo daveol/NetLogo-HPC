@@ -1,1 +1,867 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="903px" style="width:804px;height:903px;" version="1.1" viewBox="0 0 804 903" width="804px"><defs><filter height="300%" id="f1" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f1)" height="776.3828" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="381" y="117.2969"/><rect fill="#FFFFFF" filter="url(#f1)" height="61.832" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="386" y="441.1563"/><rect fill="#FFFFFF" filter="url(#f1)" height="633.5859" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="699" y="260.0938"/><rect fill="#FFFFFF" filter="url(#f1)" height="227.1953" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="704" y="637.2188"/><rect fill="#FFFFFF" filter="url(#f1)" height="158.9297" style="stroke: #000000; stroke-width: 2.0;" width="740" x="55" y="657.3516"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="240" x2="240" y1="86.2969" y2="902.6797"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="386" x2="386" y1="86.2969" y2="902.6797"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="563.5" x2="563.5" y1="86.2969" y2="902.6797"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="704" x2="704" y1="86.2969" y2="902.6797"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32" x="221" y="82.9951">User</text><ellipse cx="240" cy="13" fill="#FEFECE" filter="url(#f1)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M240,21 L240,48 M227,29 L253,29 M240,48 L227,63 M240,48 L253,63 " fill="#FEFECE" filter="url(#f1)" style="stroke: #A80036; stroke-width: 2.0;"/><rect fill="#FEFECE" filter="url(#f1)" height="30.2969" style="stroke: #A80036; stroke-width: 1.5;" width="176" x="296" y="51"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="162" x="303" y="70.9951">NetLogo HPC Controller</text><rect fill="#FEFECE" filter="url(#f1)" height="30.2969" style="stroke: #A80036; stroke-width: 1.5;" width="53" x="535.5" y="51"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="39" x="542.5" y="70.9951">Slurm</text><rect fill="#FEFECE" filter="url(#f1)" height="30.2969" style="stroke: #A80036; stroke-width: 1.5;" width="158" x="623" y="51"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="144" x="630" y="70.9951">NetLogo HPC Worker</text><rect fill="#FFFFFF" filter="url(#f1)" height="776.3828" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="381" y="117.2969"/><rect fill="#FFFFFF" filter="url(#f1)" height="61.832" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="386" y="441.1563"/><rect fill="#FFFFFF" filter="url(#f1)" height="633.5859" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="699" y="260.0938"/><rect fill="#FFFFFF" filter="url(#f1)" height="227.1953" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="704" y="637.2188"/><polygon fill="#A80036" points="369,113.2969,379,117.2969,369,121.2969,373,117.2969" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="240" x2="375" y1="117.2969" y2="117.2969"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="122" x="247" y="112.3638">Start NetLogo-HPC</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="391" x2="433" y1="167.7617" y2="167.7617"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="433" x2="433" y1="167.7617" y2="180.7617"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="392" x2="433" y1="180.7617" y2="180.7617"/><polygon fill="#A80036" points="402,176.7617,392,180.7617,402,184.7617,398,180.7617" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="154" x="398" y="162.6958">Check (Concurrent) Jobs</text><polygon fill="#FBFB77" filter="url(#f1)" points="8,130.4297,8,200.4297,372,200.4297,372,140.4297,362,130.4297,8,130.4297" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="362" x2="362" y1="130.4297" y2="140.4297"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="372" x2="362" y1="140.4297" y2="140.4297"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="343" x="14" y="147.4966">Checking for running jobs loops trough them checking</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="324" x="14" y="162.6294">if they are not completed, cancelled or failed. If the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="338" x="14" y="177.7622">amount of jobs running is lower than the maximum a</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="220" x="14" y="192.895">new job will be submitted to slurm.</text><polygon fill="#A80036" points="552,226.9609,562,230.9609,552,234.9609,556,230.9609" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="391" x2="558" y1="230.9609" y2="230.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="69" x="398" y="226.0278">Submit job</text><polygon fill="#A80036" points="687,256.0938,697,260.0938,687,264.0938,691,260.0938" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="564" x2="693" y1="260.0938" y2="260.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="116" x="571" y="255.1606">Run scheduled job</text><polygon fill="#A80036" points="402,328.0586,392,332.0586,402,336.0586,398,332.0586" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="396" x2="698" y1="332.0586" y2="332.0586"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="134" x="408" y="327.1255">Connect to controller</text><polygon fill="#FBFB77" filter="url(#f1)" points="71,273.2266,71,373.2266,372,373.2266,372,283.2266,362,273.2266,71,273.2266" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="362" x2="362" y1="273.2266" y2="283.2266"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="372" x2="362" y1="283.2266" y2="283.2266"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="280" x="77" y="290.2935">Every message sent from a worker contains</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="255" x="77" y="305.4263">the identity of the worker which is based</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="240" x="77" y="320.5591">on the slurm job id. This gets used for</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="234" x="77" y="335.6919">checking the status of the job on the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="77" y="350.8247">controller, which checks for failures</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="158" x="77" y="365.9575">and processing time left.</text><polygon fill="#A80036" points="402,400.0234,392,404.0234,402,408.0234,398,404.0234" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="396" x2="698" y1="404.0234" y2="404.0234"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="100" x="408" y="399.0903">Get runNumber</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="391" x2="438" y1="428.2891" y2="428.2891"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="438" x2="438" y1="428.2891" y2="441.2891"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="397" x2="438" y1="441.2891" y2="441.2891"/><polygon fill="#A80036" points="407,437.2891,397,441.2891,407,445.2891,403,441.2891" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="87" x="403" y="423.2231">Check Worker</text><polygon fill="#A80036" points="552,498.9883,562,502.9883,552,506.9883,556,502.9883" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="391" x2="558" y1="502.9883" y2="502.9883"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="95" x="398" y="498.0552">Check Job time</text><polygon fill="#FBFB77" filter="url(#f1)" points="108,459.2891,108,529.2891,372,529.2891,372,469.2891,362,459.2891,108,459.2891" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="362" x2="362" y1="459.2891" y2="469.2891"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="372" x2="362" y1="469.2891" y2="469.2891"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="243" x="114" y="476.356">This checks time left and status of the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="231" x="114" y="491.4888">job. If the job was cancelled or killed,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="241" x="114" y="506.6216">the runNumber will be returned to the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="230" x="114" y="521.7544">queue if the run was not completed.</text><polygon fill="#A80036" points="687,575.9531,697,579.9531,687,583.9531,691,579.9531" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="391" x2="693" y1="579.9531" y2="579.9531"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="111" x="398" y="575.02">Reply runNumber</text><polygon fill="#FBFB77" filter="url(#f1)" points="92,543.8203,92,598.8203,372,598.8203,372,553.8203,362,543.8203,92,543.8203" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="362" x2="362" y1="543.8203" y2="553.8203"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="372" x2="362" y1="553.8203" y2="553.8203"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="256" x="98" y="560.8872">This will contain a run number, if there is</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="259" x="98" y="576.02">enough time left. Otherwise return a quit</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="114" x="98" y="591.1528">message instead.</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="709" x2="756" y1="624.3516" y2="624.3516"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="756" x2="756" y1="624.3516" y2="637.3516"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="715" x2="756" y1="637.3516" y2="637.3516"/><polygon fill="#A80036" points="725,633.3516,715,637.3516,725,641.3516,721,637.3516" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="32" x="721" y="619.2856">Start</text><rect fill="none" height="158.9297" style="stroke: #000000; stroke-width: 2.0;" width="740" x="55" y="657.3516"/><polygon fill="#EEEEEE" points="55,657.3516,132,657.3516,132,664.3516,122,674.3516,55,674.3516,55,657.3516" style="stroke: #000000; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="32" x="70" y="670.4185">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="90" x="147" y="669.562">[step &lt; steps]</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="714" x2="756" y1="695.6172" y2="695.6172"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="756" x2="756" y1="695.6172" y2="708.6172"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="715" x2="756" y1="708.6172" y2="708.6172"/><polygon fill="#A80036" points="725,704.6172,715,708.6172,725,712.6172,721,708.6172" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="30" x="721" y="690.5513">Step</text><polygon fill="#A80036" points="402,768.8828,392,772.8828,402,776.8828,398,772.8828" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="396" x2="703" y1="772.8828" y2="772.8828"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="77" x="408" y="767.9497">Report Data</text><polygon fill="#FBFB77" filter="url(#f1)" points="65,721.6172,65,806.6172,372,806.6172,372,731.6172,362,721.6172,65,721.6172" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="362" x2="362" y1="721.6172" y2="731.6172"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="372" x2="362" y1="731.6172" y2="731.6172"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="286" x="71" y="738.6841">This reports the data generated by running a</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="275" x="71" y="753.8169">step of the simulation. The data will also be</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="279" x="71" y="768.9497">saved to a file by the worker as backup. The</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="234" x="71" y="784.0825">controller will assenble all the data in</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="76" x="71" y="799.2153">one big csv.</text><polygon fill="#A80036" points="402,860.4141,392,864.4141,402,868.4141,398,864.4141" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="396" x2="698" y1="864.4141" y2="864.4141"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="108" x="408" y="859.481">Report Complete</text><polygon fill="#FBFB77" filter="url(#f1)" points="39,828.2813,39,883.2813,372,883.2813,372,838.2813,362,828.2813,39,828.2813" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="362" x2="362" y1="828.2813" y2="838.2813"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="372" x2="362" y1="838.2813" y2="838.2813"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="304" x="45" y="845.3481">This is in reality a new "Get runNumber" to clear</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="311" x="45" y="860.481">the previous one in the Controller so it is marked</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="312" x="45" y="875.6138">as completed and not resubmitted to the queue.</text></g></svg>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    height="903px"
+    style="width:804px;height:903px;"
+    version="1.1"
+    viewBox="0 0 804 903"
+    width="804px"
+  ><defs
+    ><filter
+        height="300%"
+        id="f1"
+        width="300%"
+        x="-1"
+        y="-1"
+      ><feGaussianBlur
+          result="blurOut"
+          stdDeviation="2.0"
+      /><feColorMatrix
+          in="blurOut"
+          result="blurOut2"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"
+      /><feOffset
+          dx="4.0"
+          dy="4.0"
+          in="blurOut2"
+          result="blurOut3"
+      /><feBlend
+          in="SourceGraphic"
+          in2="blurOut3"
+          mode="normal"
+      /></filter
+    ></defs
+  ><g
+    ><rect
+        fill="#FFFFFF"
+        filter="url(#f1)"
+        height="776.3828"
+        style="stroke: #A80036; stroke-width: 1.0;"
+        width="10"
+        x="381"
+        y="117.2969"
+    /><rect
+        fill="#FFFFFF"
+        filter="url(#f1)"
+        height="61.832"
+        style="stroke: #A80036; stroke-width: 1.0;"
+        width="10"
+        x="386"
+        y="441.1563"
+    /><rect
+        fill="#FFFFFF"
+        filter="url(#f1)"
+        height="633.5859"
+        style="stroke: #A80036; stroke-width: 1.0;"
+        width="10"
+        x="699"
+        y="260.0938"
+    /><rect
+        fill="#FFFFFF"
+        filter="url(#f1)"
+        height="227.1953"
+        style="stroke: #A80036; stroke-width: 1.0;"
+        width="10"
+        x="704"
+        y="637.2188"
+    /><rect
+        fill="#FFFFFF"
+        filter="url(#f1)"
+        height="158.9297"
+        style="stroke: #000000; stroke-width: 2.0;"
+        width="740"
+        x="55"
+        y="657.3516"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;"
+        x1="240"
+        x2="240"
+        y1="86.2969"
+        y2="902.6797"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;"
+        x1="386"
+        x2="386"
+        y1="86.2969"
+        y2="902.6797"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;"
+        x1="563.5"
+        x2="563.5"
+        y1="86.2969"
+        y2="902.6797"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;"
+        x1="704"
+        x2="704"
+        y1="86.2969"
+        y2="902.6797"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="14"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="32"
+        x="221"
+        y="82.9951"
+      >User</text
+    ><ellipse
+        cx="240"
+        cy="13"
+        fill="#FEFECE"
+        filter="url(#f1)"
+        rx="8"
+        ry="8"
+        style="stroke: #A80036; stroke-width: 2.0;"
+    /><path
+        d="M240,21 L240,48 M227,29 L253,29 M240,48 L227,63 M240,48 L253,63"
+        fill="#FEFECE"
+        filter="url(#f1)"
+        style="stroke: #A80036; stroke-width: 2.0;"
+    /><rect
+        fill="#FEFECE"
+        filter="url(#f1)"
+        height="30.2969"
+        style="stroke: #A80036; stroke-width: 1.5;"
+        width="176"
+        x="296"
+        y="51"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="14"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="162"
+        x="303"
+        y="70.9951"
+      >NetLogo HPC Controller</text
+    ><rect
+        fill="#FEFECE"
+        filter="url(#f1)"
+        height="30.2969"
+        style="stroke: #A80036; stroke-width: 1.5;"
+        width="53"
+        x="535.5"
+        y="51"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="14"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="39"
+        x="542.5"
+        y="70.9951"
+      >Slurm</text
+    ><rect
+        fill="#FEFECE"
+        filter="url(#f1)"
+        height="30.2969"
+        style="stroke: #A80036; stroke-width: 1.5;"
+        width="158"
+        x="623"
+        y="51"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="14"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="144"
+        x="630"
+        y="70.9951"
+      >NetLogo HPC Worker</text
+    ><rect
+        fill="#FFFFFF"
+        filter="url(#f1)"
+        height="776.3828"
+        style="stroke: #A80036; stroke-width: 1.0;"
+        width="10"
+        x="381"
+        y="117.2969"
+    /><rect
+        fill="#FFFFFF"
+        filter="url(#f1)"
+        height="61.832"
+        style="stroke: #A80036; stroke-width: 1.0;"
+        width="10"
+        x="386"
+        y="441.1563"
+    /><rect
+        fill="#FFFFFF"
+        filter="url(#f1)"
+        height="633.5859"
+        style="stroke: #A80036; stroke-width: 1.0;"
+        width="10"
+        x="699"
+        y="260.0938"
+    /><rect
+        fill="#FFFFFF"
+        filter="url(#f1)"
+        height="227.1953"
+        style="stroke: #A80036; stroke-width: 1.0;"
+        width="10"
+        x="704"
+        y="637.2188"
+    /><polygon
+        fill="#A80036"
+        points="369,113.2969,379,117.2969,369,121.2969,373,117.2969"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;"
+        x1="240"
+        x2="375"
+        y1="117.2969"
+        y2="117.2969"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="122"
+        x="247"
+        y="112.3638"
+      >Start NetLogo-HPC</text
+    ><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="391"
+        x2="433"
+        y1="167.7617"
+        y2="167.7617"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="433"
+        x2="433"
+        y1="167.7617"
+        y2="180.7617"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="392"
+        x2="433"
+        y1="180.7617"
+        y2="180.7617"
+    /><polygon
+        fill="#A80036"
+        points="402,176.7617,392,180.7617,402,184.7617,398,180.7617"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="154"
+        x="398"
+        y="162.6958"
+      >Check (Concurrent) Jobs</text
+    ><polygon
+        fill="#FBFB77"
+        filter="url(#f1)"
+        points="8,130.4297,8,200.4297,372,200.4297,372,140.4297,362,130.4297,8,130.4297"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="362"
+        x2="362"
+        y1="130.4297"
+        y2="140.4297"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="372"
+        x2="362"
+        y1="140.4297"
+        y2="140.4297"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="343"
+        x="14"
+        y="147.4966"
+      >Checking for running jobs loops trough them
+    checking</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="324"
+        x="14"
+        y="162.6294"
+      >if they are not completed, cancelled or failed. If
+    the</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="338"
+        x="14"
+        y="177.7622"
+      >amount of jobs running is lower than the maximum
+    a</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="220"
+        x="14"
+        y="192.895"
+      >new job will be submitted to slurm.</text
+    ><polygon
+        fill="#A80036"
+        points="552,226.9609,562,230.9609,552,234.9609,556,230.9609"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;"
+        x1="391"
+        x2="558"
+        y1="230.9609"
+        y2="230.9609"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="69"
+        x="398"
+        y="226.0278"
+      >Submit job</text
+    ><polygon
+        fill="#A80036"
+        points="687,256.0938,697,260.0938,687,264.0938,691,260.0938"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;"
+        x1="564"
+        x2="693"
+        y1="260.0938"
+        y2="260.0938"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="116"
+        x="571"
+        y="255.1606"
+      >Run scheduled job</text
+    ><polygon
+        fill="#A80036"
+        points="402,328.0586,392,332.0586,402,336.0586,398,332.0586"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;"
+        x1="396"
+        x2="698"
+        y1="332.0586"
+        y2="332.0586"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="134"
+        x="408"
+        y="327.1255"
+      >Connect to controller</text
+    ><polygon
+        fill="#FBFB77"
+        filter="url(#f1)"
+        points="71,273.2266,71,373.2266,372,373.2266,372,283.2266,362,273.2266,71,273.2266"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="362"
+        x2="362"
+        y1="273.2266"
+        y2="283.2266"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="372"
+        x2="362"
+        y1="283.2266"
+        y2="283.2266"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="280"
+        x="77"
+        y="290.2935"
+      >Every message sent from a worker contains</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="255"
+        x="77"
+        y="305.4263"
+      >the identity of the worker which is based</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="240"
+        x="77"
+        y="320.5591"
+      >on the slurm job id. This gets used for</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="234"
+        x="77"
+        y="335.6919"
+      >checking the status of the job on the</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="222"
+        x="77"
+        y="350.8247"
+      >controller, which checks for failures</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="158"
+        x="77"
+        y="365.9575"
+      >and processing time left.</text
+    ><polygon
+        fill="#A80036"
+        points="402,400.0234,392,404.0234,402,408.0234,398,404.0234"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;"
+        x1="396"
+        x2="698"
+        y1="404.0234"
+        y2="404.0234"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="100"
+        x="408"
+        y="399.0903"
+      >Get runNumber</text
+    ><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="391"
+        x2="438"
+        y1="428.2891"
+        y2="428.2891"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="438"
+        x2="438"
+        y1="428.2891"
+        y2="441.2891"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="397"
+        x2="438"
+        y1="441.2891"
+        y2="441.2891"
+    /><polygon
+        fill="#A80036"
+        points="407,437.2891,397,441.2891,407,445.2891,403,441.2891"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="87"
+        x="403"
+        y="423.2231"
+      >Check Worker</text
+    ><polygon
+        fill="#A80036"
+        points="552,498.9883,562,502.9883,552,506.9883,556,502.9883"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;"
+        x1="391"
+        x2="558"
+        y1="502.9883"
+        y2="502.9883"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="95"
+        x="398"
+        y="498.0552"
+      >Check Job time</text
+    ><polygon
+        fill="#FBFB77"
+        filter="url(#f1)"
+        points="108,459.2891,108,529.2891,372,529.2891,372,469.2891,362,459.2891,108,459.2891"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="362"
+        x2="362"
+        y1="459.2891"
+        y2="469.2891"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="372"
+        x2="362"
+        y1="469.2891"
+        y2="469.2891"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="243"
+        x="114"
+        y="476.356"
+      >This checks time left and status of the</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="231"
+        x="114"
+        y="491.4888"
+      >job. If the job was cancelled or killed,</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="241"
+        x="114"
+        y="506.6216"
+      >the runNumber will be returned to the</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="230"
+        x="114"
+        y="521.7544"
+      >queue if the run was not completed.</text
+    ><polygon
+        fill="#A80036"
+        points="687,575.9531,697,579.9531,687,583.9531,691,579.9531"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;"
+        x1="391"
+        x2="693"
+        y1="579.9531"
+        y2="579.9531"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="111"
+        x="398"
+        y="575.02"
+      >Reply runNumber</text
+    ><polygon
+        fill="#FBFB77"
+        filter="url(#f1)"
+        points="92,543.8203,92,598.8203,372,598.8203,372,553.8203,362,543.8203,92,543.8203"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="362"
+        x2="362"
+        y1="543.8203"
+        y2="553.8203"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="372"
+        x2="362"
+        y1="553.8203"
+        y2="553.8203"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="256"
+        x="98"
+        y="560.8872"
+      >This will contain a run number, if there is</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="259"
+        x="98"
+        y="576.02"
+      >
+    enough time left. Otherwise return a quit</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="114"
+        x="98"
+        y="591.1528"
+      >message instead.</text
+    ><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="709"
+        x2="756"
+        y1="624.3516"
+        y2="624.3516"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="756"
+        x2="756"
+        y1="624.3516"
+        y2="637.3516"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="715"
+        x2="756"
+        y1="637.3516"
+        y2="637.3516"
+    /><polygon
+        fill="#A80036"
+        points="725,633.3516,715,637.3516,725,641.3516,721,637.3516"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="32"
+        x="721"
+        y="619.2856"
+      >Start</text
+    ><rect
+        fill="none"
+        height="158.9297"
+        style="stroke: #000000; stroke-width: 2.0;"
+        width="740"
+        x="55"
+        y="657.3516"
+    /><polygon
+        fill="#EEEEEE"
+        points="55,657.3516,132,657.3516,132,664.3516,122,674.3516,55,674.3516,55,657.3516"
+        style="stroke: #000000; stroke-width: 2.0;"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        font-weight="bold"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="32"
+        x="70"
+        y="670.4185"
+      >loop</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="11"
+        font-weight="bold"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="90"
+        x="147"
+        y="669.562"
+      >[step &lt; steps]</text
+    ><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="714"
+        x2="756"
+        y1="695.6172"
+        y2="695.6172"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="756"
+        x2="756"
+        y1="695.6172"
+        y2="708.6172"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="715"
+        x2="756"
+        y1="708.6172"
+        y2="708.6172"
+    /><polygon
+        fill="#A80036"
+        points="725,704.6172,715,708.6172,725,712.6172,721,708.6172"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="30"
+        x="721"
+        y="690.5513"
+      >Step</text
+    ><polygon
+        fill="#A80036"
+        points="402,768.8828,392,772.8828,402,776.8828,398,772.8828"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;"
+        x1="396"
+        x2="703"
+        y1="772.8828"
+        y2="772.8828"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="77"
+        x="408"
+        y="767.9497"
+      >Report Data</text
+    ><polygon
+        fill="#FBFB77"
+        filter="url(#f1)"
+        points="65,721.6172,65,806.6172,372,806.6172,372,731.6172,362,721.6172,65,721.6172"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="362"
+        x2="362"
+        y1="721.6172"
+        y2="731.6172"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="372"
+        x2="362"
+        y1="731.6172"
+        y2="731.6172"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="286"
+        x="71"
+        y="738.6841"
+      >This reports the data generated by running a</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="275"
+        x="71"
+        y="753.8169"
+      >step of the simulation. The data will also be</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="279"
+        x="71"
+        y="768.9497"
+      >saved to a file by the worker as backup. The</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="234"
+        x="71"
+        y="784.0825"
+      >controller will assenble all the data in</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="76"
+        x="71"
+        y="799.2153"
+      >one big csv.</text
+    ><polygon
+        fill="#A80036"
+        points="402,860.4141,392,864.4141,402,868.4141,398,864.4141"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;"
+        x1="396"
+        x2="698"
+        y1="864.4141"
+        y2="864.4141"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="108"
+        x="408"
+        y="859.481"
+      >Report Complete</text
+    ><polygon
+        fill="#FBFB77"
+        filter="url(#f1)"
+        points="39,828.2813,39,883.2813,372,883.2813,372,838.2813,362,828.2813,39,828.2813"
+        style="stroke: #A80036; stroke-width: 1.0;"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="362"
+        x2="362"
+        y1="828.2813"
+        y2="838.2813"
+    /><line
+        style="stroke: #A80036; stroke-width: 1.0;"
+        x1="372"
+        x2="362"
+        y1="838.2813"
+        y2="838.2813"
+    /><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="304"
+        x="45"
+        y="845.3481"
+      >This is in reality a new "Get runNumber" to
+    clear</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="311"
+        x="45"
+        y="860.481"
+      >the previous one in the Controller so it is
+    marked</text
+    ><text
+        fill="#000000"
+        font-family="sans-serif"
+        font-size="13"
+        lengthAdjust="spacingAndGlyphs"
+        textLength="312"
+        x="45"
+        y="875.6138"
+      >as completed and not resubmitted to the queue.</text
+    ></g
+  ></svg
+>
