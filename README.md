@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/daveol/NetLogo-HPC.svg?branch=master)](https://travis-ci.org/daveol/NetLogo-HPC)
+[![Maintainability](https://api.codeclimate.com/v1/badges/97b12d3a30e4b74b26f8/maintainability)](https://codeclimate.com/github/daveol/NetLogo-HPC/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/97b12d3a30e4b74b26f8/test_coverage)](https://codeclimate.com/github/daveol/NetLogo-HPC/test_coverage)
 # NetLogo-HPC
 Creating a application to run Netlogo on HPC clusters
 

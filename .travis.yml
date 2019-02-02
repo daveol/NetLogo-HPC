@@ -1,8 +1,19 @@
 language: scala
 scala: 2.12.4
+
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
 script:
- - sbt ++$TRAVIS_SCALA_VERSION test
- - sbt ++$TRAVIS_SCALA_VERSION packArchive
+# generate test coverage
+ - sbt ++$TRAVIS_SCALA_VERSION clean coverage test coverageReport
+ - ./cc-test-reporter format-coverage -t cobertura -d target/scala-${TRAVIS_SCALA_VERSION%.*}/coverage-report/cobertura.xml
+ - ./cc-test-reporter upload-coverage
+# generate package
+ - sbt ++$TRAVIS_SCALA_VERSION clean packArchive
+
 deploy:
  skip_cleanup: true
  provider: releases
