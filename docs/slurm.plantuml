@@ -1,0 +1,91 @@
+@startuml
+skinparam ParticipantPadding 30
+hide footbox
+
+actor User
+participant SlurmController
+participant SlurmWorker
+participant SlurmJob
+
+title
+A general overview of how slurm works.
+end title
+
+== Submitting a Job ==
+
+note right of User
+A job submitted to slurm should
+contain some specifications about
+the required resources like __time__,
+__cores__ and __memory__. This can be done
+using one of the tools provided by
+slurm like __srun__ or __sbatch__.
+end note
+
+User -> SlurmController : Submit Job
+activate SlurmController
+
+create SlurmJob
+SlurmController -> SlurmJob : new
+
+SlurmController --> User: Return Job ID
+deactivate SlurmController
+
+SlurmJob --> SlurmController: Schedule
+
+== Get Job status ==
+
+note right of User
+Slurm Jobs can have one of many status
+indications, for a complete list check
+the slurm documentation. The most
+relevant ones for automation are __queued__,
+__running__, __killed__, __cancelled__ and __completed__.
+end note
+
+User -> SlurmController: Get status of Job 
+activate SlurmController
+
+SlurmController -> SlurmController: Get Job by ID
+activate SlurmController
+
+SlurmController -> SlurmJob: Get Status
+activate SlurmJob
+
+SlurmJob --> SlurmController
+deactivate SlurmJob
+
+SlurmController --> User: Status
+deactivate SlurmController
+deactivate SlurmController
+
+== Running a Job ==
+
+note right of User
+When the job is submitted it will be
+scheduled by the controller based on
+required resources, and the priority
+of the user. The worker will ask the
+controller for the next scheduled job
+when a job is finished or killed.
+end note
+
+SlurmWorker -> SlurmController: Get SlurmJob from Queue
+activate SlurmController
+activate SlurmWorker
+
+SlurmController --> SlurmWorker
+deactivate SlurmController
+
+SlurmWorker -> SlurmJob: Get script
+activate SlurmJob
+
+SlurmJob --> SlurmWorker
+deactivate SlurmJob
+
+SlurmWorker -> SlurmWorker: Run Script
+activate SlurmWorker
+
+deactivate SlurmWorker
+deactivate SlurmWorker
+@enduml
