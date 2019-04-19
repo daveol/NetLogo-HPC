@@ -83,6 +83,7 @@ class Slurm (
     sbatch.println()
     sbatch.println(s"export NETLOGO_MODEL=${settings.getModelPath}")
     sbatch.println(s"export NETLOGO_EXPERIMENT=${settings.experiment}")
+    sbatch.println( "export NETLOGO_LISTEN=false")
     sbatch.println( "export NETLOGO_WORKER=true")
     sbatch.println(s"export NETLOGO_URI=${settings.getConnectionURI}")
     sbatch.println( "export NETLOGO_METRIC_TABLE=\"$(mktemp -d)/backup.csv\"")
