@@ -34,6 +34,7 @@ $netlogo-hpc --model model.nlogo --experiment experiment --table results.csv
 ```
 
 ## Documentation for netlogo-hpc
+```
  Arguments:
   --help
       shows this help information
@@ -67,3 +68,4 @@ Advanced options:
  Scheduler arguments:
   --concurrent [number of allowed tasks] (optional)
       Specifies the amount of tasks that are allowed to be concurrently deployed on the cluster, it defaults to eight tasks.
+```
