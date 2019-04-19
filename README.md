@@ -19,10 +19,7 @@ Application to run Netlogo on HPC clusters which use SLURM for scheduling. Uses 
 ```netlogo-hpc --model model.nlogo --experiment experiment --table results.csv &&  mail -s "Simulation finished" user@example.com < /dev/null || mail -s "Simulation crashed" user@example.com < /dev/null ```
 
 ## Using extensions
-1. Create a 'extensions' directory in the model experiment, and place any extensions you need there. Please note that at the moment not all extensions work. 
-
-Knwn not to work : 
-* Table
+Create a 'extensions' directory in the model experiment, and place any extensions you need there. Please note that at the moment saving experimental output in non-NetLogo native data types is not supported. For eample, you can not use a Table object as a output of a reporter to be saved in the output file.
 
 
 ## Building the application
