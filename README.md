@@ -8,16 +8,13 @@ Application to run Netlogo on HPC clusters which use SLURM for scheduling. Uses 
 ## Installing the application
 1. Assuming you are on a linux based HPC
 1. Change into the directory containing your model.
-1. [Download the tar.gz file](https://github.com/daveol/NetLogo-HPC/releases) ```$ wget  https://github.com/daveol/NetLogo-HPC/releases/download/0.1.4/NetLogo-HPC-0.1.4.tar.gz```
-1. Unpack the archive ```tar -zxvf NetLogo-HPC-0.1.4.tar.gz```
+1. [Download the tar.gz file](https://github.com/daveol/NetLogo-HPC/releases) You can do that directly from the command line with ```wget  https://github.com/daveol/NetLogo-HPC/releases/download/0.1.4/NetLogo-HPC-0.1.4.tar.gz```
+1. Unpack the archive with ```tar -zxvf NetLogo-HPC-0.1.4.tar.gz```
 
 ## Using the application
 1. Change into the directory containing your model.
 1. Start screen or tmux program. If you are not familiar with screen and what it does, please see the [wikipedia page on  GNU screen](https://en.wikipedia.org/wiki/GNU_Screen) 
-1. execute
-```
-$netlogo-hpc --model model.nlogo --experiment experiment --table results.csv 
-```
+1. execute ```netlogo-hpc --model model.nlogo --experiment experiment --table results.csv ```
 1. You can now detach from your session, and wait for the simulations to finish. If you would like to be notified by email when it finishes or crashes, you can use the following incantation :
 ```$netlogo-hpc --model model.nlogo --experiment experiment --table results.csv &&  mail -s "Simulation finished" user@example.com < /dev/null || mail -s "Simulation crashed" user@example.com < /dev/null ```
 
