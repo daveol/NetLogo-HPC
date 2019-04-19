@@ -18,6 +18,13 @@ Application to run Netlogo on HPC clusters which use SLURM for scheduling. Uses 
 1. You can now detach from your session, and wait for the simulations to finish. If you would like to be notified by email when it finishes or crashes, you can use the following incantation :
 ```netlogo-hpc --model model.nlogo --experiment experiment --table results.csv &&  mail -s "Simulation finished" user@example.com < /dev/null || mail -s "Simulation crashed" user@example.com < /dev/null ```
 
+## Using extensions
+1. Create a 'extensions' directory in the model experiment, and place any extensions you need there. Please note that at the moment not all extensions work. 
+
+Knwn not to work : 
+* Table
+
+
 ## Building the application
 Please note, building has only been tested on Linux, but will probaly work on other unix type OSs, like OSX.
 
